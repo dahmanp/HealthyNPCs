@@ -249,6 +249,9 @@ GameObject:
   - component: {fileID: 535107303}
   - component: {fileID: 535107302}
   - component: {fileID: 535107301}
+  - component: {fileID: 535107308}
+  - component: {fileID: 535107307}
+  - component: {fileID: 535107306}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -268,6 +271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d071bacfe25764fb33f66f86af0aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 4
+  turnSpeed: 90
 --- !u!65 &535107302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -347,6 +352,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535107306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535107300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed82d296b6681a5428d7bc6a952d4638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &535107307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535107300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeee41a09ab7ce946b46371a3c73ec27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+--- !u!114 &535107308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535107300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c644ab64e6a9f1f449297ea7a12c04ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathParticlePrefab: {fileID: 5139466195945210429, guid: dee25ef51a9b5ce4d97fd655c61cd272, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
